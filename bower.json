@@ -1,0 +1,20 @@
+{
+  "name": "ajax-helper",
+  "version": "0.0.0",
+  "authors": [
+    "Nico Schneider <nico.tcap@gmail.com>"
+  ],
+  "description": "A simple AJAX helper that uses HTML5-data attributes.",
+  "main": "ajax-helper.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "ajax",
+    "jquery",
+    "helper",
+    "ajax-helper",
+    "html5"
+  ],
+  "license": "MIT"
+}
