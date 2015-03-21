@@ -1,9 +1,8 @@
 # Ajax Helper v1.0.0
 
+[![VersionEye](https://www.versioneye.com/user/projects/550d67aca80b5f498900010c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/550d67aca80b5f498900010c)
+
 A simple jQuery AJAX helper plugin that uses HTML5-data attributes.
-
-## Project Status
-
 
 ## Installation
 
@@ -101,3 +100,8 @@ You'll have the `.ajaxHelper()` function availiable as a normal jQuery plugin.
 * Get rid of jQuery dependency
 * Maybe use some of the new browser APIs like `fetch`
 * Make this more robust and versatile
+* Support more events/callbacks to hook into processing logic. Yay callbacks!
+
+If you'd like to contribute, feel free to send pull requests. Especially the jQuery dependency should be removed entirely.
+
+Licensed under MIT.
