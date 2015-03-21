@@ -19,10 +19,10 @@
         defaultMethod:  'post',
         preventDefault: true,
         namespaces:     [
-            'aael',
+            'helper',
             'ajax'
         ],
-        csrfToken:      $('meta[name="aael-csrf-token"]').attr('content')
+        csrfToken:      $('meta[name="helper-csrf-token"]').attr('content')
     };
 
     var AjaxHelper = function (context, options) {
