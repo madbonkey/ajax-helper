@@ -38,15 +38,63 @@ require['jquery', 'ajaxHelper'], function($) {
 
 You'll have the `.ajaxHelper()` function availiable as a normal jQuery plugin.
 
-## Cookbook
+## Reference/Cookbook
+
+### Options, or: What the hell can I do?
+
+---
+
+#### `selector: string`
+
+**Default value**: `'*[data-ajax="true"]'`
+
+*Documentation in the works.*
+
+---
+
+#### `defaultMethod: string`
+
+**Default value**: `'post'`
+
+*Documentation in the works.*
+
+---
+
+#### `preventDefault: boolean`
+
+**Default value**: `true`
+
+*Documentation in the works.*
+
+---
+
+#### `namespaces: string[]`
+
+**Default value**: `'['aael', 'ajax']'`
+
+*Documentation in the works.*
+
+---
+
+#### `csrfToken: string`
+
+**Default value**: `$('meta[name="aael-csrf-token"]').attr('content')`
+
+*Documentation in the works.*
+
+---
 
 ### Confirmation dialogs and the like, or: the `before` event and its adventures.
 
-Follows.
+*Documentation in the works.*
 
 ### Result events, or: `success` and `error` events.
 
-Follows.
+*Documentation in the works.*
+
+### Payloads or: How to get additional data to my backend?
+
+*Documentation in the works.*
 
 # Roadmap & Contribution
 
