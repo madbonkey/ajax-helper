@@ -61,13 +61,20 @@
                     // we'll clone this using Array.slice() to not pollute
                     // the "global" event namespaces for later use
                     var successEventNamespace = context.options.namespaces.slice(0);
+                    var parsedResponse;
 
                     // the event namespace will also contain
                     // a "success" part
                     successEventNamespace.push(data.namespace, 'success');
 
+                    try {
+                        parsedResponse = JSON.parse(response);
+                    } catch(exception) {
+                        parsedResponse = response;
+                    }
+
                     var eventPayload = {
-                        response: response,
+                        response: parsedResponse,
                         status:   status,
                         request:  request,
                         target:   data.target,
@@ -91,13 +98,20 @@
                     // we'll clone this using Array.slice() to not pollute
                     // the "global" event namespaces for later use
                     var errorEventNamespace = context.options.namespaces.slice(0);
+                    var parsedResponse;
 
                     // the event namespace will also contain
                     // an "error" part
                     errorEventNamespace.push(data.namespace, 'error');
 
+                    try {
+                        parsedResponse = JSON.parse(response.responseText);
+                    } catch(exception) {
+                        parsedResponse = response.responseText;
+                    }
+
                     var eventPayload = {
-                        response: JSON.parse(response.responseText),
+                        response: parsedResponse,
                         status:   status,
                         request:  request,
                         target:   data.target,

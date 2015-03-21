@@ -1,4 +1,4 @@
-# Ajax Helper v1.0.1
+# Ajax Helper v1.0.2
 
 [![VersionEye](https://www.versioneye.com/user/projects/550d67aca80b5f498900010c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/550d67aca80b5f498900010c)
 
