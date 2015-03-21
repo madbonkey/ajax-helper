@@ -30,7 +30,7 @@ You can basically attach `ajax-helper.js` to anything. It's just syntactic sugar
 
 ```javascript
 require['jquery', 'ajaxHelper'], function($) {
-	$('selector').ajaxHelper();	
+	$('selector').ajaxHelper();
 }
 ```
 
