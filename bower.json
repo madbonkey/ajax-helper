@@ -16,5 +16,8 @@
     "ajax-helper",
     "html5"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
 }
