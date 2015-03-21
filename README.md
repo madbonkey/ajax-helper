@@ -1,4 +1,4 @@
-# Ajax Helper v0.0.0
+# Ajax Helper v1.0.0
 
 A simple jQuery AJAX helper plugin that uses HTML5-data attributes.
 
@@ -30,7 +30,7 @@ You can basically attach `ajax-helper.js` to anything. It's just syntactic sugar
 
 ```javascript
 require['jquery', 'ajaxHelper'], function($) {
-	$('selector').ajaxHelper();	
+	$('selector').ajaxHelper();
 }
 ```
 
