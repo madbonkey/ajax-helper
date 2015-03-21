@@ -1,4 +1,4 @@
-# Ajax Helper v0.0.0
+# Ajax Helper v1.0.0
 
 A simple jQuery AJAX helper plugin that uses HTML5-data attributes.
 
