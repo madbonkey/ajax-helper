@@ -21,6 +21,16 @@ Although we strongly recommend an AMD-module loader like Require.js, you can abs
 
 You can basically attach `ajax-helper.js` to anything. It's just syntactic sugar that frees you from binding i.e. `click` event handlers to stuff and firing XHR requests manually.
 
+Initializing `ajax-helper.js`. See Reference/Options for more information.
+
+```javascript
+$('body').ajaxHelper({
+    selector: '*[data-ajax="true"]'
+});
+```
+
+This initializes our helper on all elements with `data-ajax="true"` set. Since we most likely want to bind to dynamically created elements as well, you'll want to call `.ajaxHelper()` on an element high in the DOM. The `selector` you can pass will attach events to all elements matched by the passed selector.
+
 ### With Require.js
 
 * Configure Require to look for `ajax-helper.js` by adding it to Require's `path` configuration just like any other AMD module.
@@ -29,13 +39,33 @@ You can basically attach `ajax-helper.js` to anything. It's just syntactic sugar
 
 ```javascript
 require['jquery', 'ajaxHelper'], function($) {
-	$('selector').ajaxHelper();
+    $('selector').ajaxHelper();
 }
 ```
 
 ### Manual
 
 You'll have the `.ajaxHelper()` function availiable as a normal jQuery plugin.
+
+### Data Attributes
+
+---
+
+#### `data-url: string` *(required)*
+
+*Documentation in the works.*
+
+---
+
+#### `data-method: string`
+
+**Default value**: `'post'`
+
+*Documentation in the works.*
+
+---
+
+...
 
 ## Reference/Cookbook
 
